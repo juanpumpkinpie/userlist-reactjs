@@ -3,6 +3,7 @@ import axios from "axios";
 import "./App.scss";
 import UserForm from "./Components/Userform";
 import ViewList from "./Components/ViewList";
+import Counter from "./Components/props/counter";
 
 class App extends Component {
   state = {
@@ -32,6 +33,7 @@ class App extends Component {
           <ViewList data={data} handleClick={this.selectUsers} />
         )}
         {ruta === "formulario" && <UserForm />}
+        <Counter />
       </div>
     );
   }

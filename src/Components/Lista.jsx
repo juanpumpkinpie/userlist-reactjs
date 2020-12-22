@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 export default class Lista extends Component {
+  //curriying Function
   handleClick = (id) => (e) => {
     const { handleClick } = this.props;
     handleClick(id);
